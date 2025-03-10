@@ -1,39 +1,31 @@
 {
 	"name": "roblox-ts-game",
-	"emitLegacyScripts": false,
-	"globIgnorePaths": [
-		"**/package.json",
-		"**/tsconfig.json"
-	],
 	"tree": {
 		"$className": "DataModel",
+		"ServerScriptService": {
+			"$className": "ServerScriptService",
+			"TS": {
+				"$path": "out/server"
+			}
+		},
 		"ReplicatedStorage": {
 			"$className": "ReplicatedStorage",
 			"rbxts_include": {
 				"$path": "include",
 				"node_modules": {
-					"$className": "Folder",
-					"@rbxts": {
-						"$path": "node_modules/@rbxts"
-					},
-					"@flamework": {
-						"$path": "node_modules/@flamework"
-					}
+					"$path": "node_modules/@rbxts"
 				}
 			},
-			"Assets":{
-				"$className": "Folder",
+			"TS": {
+				"$path": "out/shared"
+			}
+		},
+		"StarterPlayer": {
+			"$className": "StarterPlayer",
+			"StarterPlayerScripts": {
+				"$className": "StarterPlayerScripts",
 				"TS": {
-					"$className": "Folder",
-					"Shared": {
-						"$path": "out/shared"
-					},
-					"Server": {
-						"$path": "out/server"
-					},
-					"Client": {
-						"$path": "out/client"
-					}
+					"$path": "out/client"
 				}
 			}
 		},
@@ -42,7 +34,7 @@
 			"$properties": {
 				"FilteringEnabled": true
 			}
-		},
+		},				
 		"HttpService": {
 			"$className": "HttpService",
 			"$properties": {

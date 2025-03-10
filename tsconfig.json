@@ -20,15 +20,27 @@
 			"node_modules/@flamework"
 		],
 		// configurable
-		"rootDir": "src",
+		"rootDir": "Src",
 		"outDir": "out",
-		"baseUrl": "src",
+		"baseUrl": "Src",
 		"incremental": true,
 		"tsBuildInfoFile": "out/tsconfig.tsbuildinfo",
 		"plugins": [
 			{
 				"transform": "rbxts-transformer-flamework"
-			}
+			},
+			{
+				"transform": "rbxts-transform-debug",
+				"enabled": true,
+				"verbose": false,
+				"version": 2,
+				"environmentRequires": {
+					//"NODE_ENV": "development"
+				},
+			},
 		]
-	}
+	},
+	"exclude": [
+		"rbxts-transform-debug"
+	]
 }

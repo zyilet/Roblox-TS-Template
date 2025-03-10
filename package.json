@@ -1,36 +1,47 @@
 {
-  "name": "roblox-ts-template",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "build": "rbxtsc",
-    "watch": "rbxtsc -w"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@rbxts/compiler-types": "^3.0.0-types.0",
-    "@rbxts/types": "^1.0.813",
-    "@typescript-eslint/eslint-plugin": "^8.13.0",
-    "@typescript-eslint/parser": "^8.13.0",
-    "eslint": "^8.57.1",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-roblox-ts": "^0.0.36",
-    "prettier": "^3.3.3",
-    "rbxts-transformer-flamework": "^1.2.3",
-    "roblox-ts": "^3.0.0",
-    "typescript": "^5.5.3"
-  },
-  "dependencies": {
-    "@flamework/components": "^1.2.3",
-    "@flamework/core": "^1.2.3",
-    "@flamework/networking": "^1.2.3",
-    "@rbxts/react": "^17.2.1",
-    "@rbxts/react-roblox": "^17.2.1",
-    "@rbxts/services": "^1.5.5",
-    "@rbxts/ui-labs": "^2.3.0"
-  }
+	"name": "roblox-ts-template",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"build": "rbxtsc",
+		"watch": "rbxtsc -w"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@rbxts/compiler-types": "^3.0.0-types.0",
+		"@rbxts/types": "^1.0.813",
+		"@typescript-eslint/eslint-plugin": "^8.13.0",
+		"@typescript-eslint/parser": "^8.13.0",
+		"eslint": "^8.57.1",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-prettier": "^5.2.1",
+		"eslint-plugin-roblox-ts": "^0.0.36",
+		"prettier": "^3.3.3",
+		"rbxts-transformer-flamework": "^1.2.3",
+		"roblox-ts": "^3.0.0",
+		"typescript": "^5.5.3"
+	},
+	"dependencies": {
+		"@flamework/components": "^1.2.3",
+		"@flamework/core": "^1.2.3",
+		"@flamework/networking": "^1.2.3",
+		"@rbxts/behavior-tree-5": "^1.0.0",
+		"@rbxts/finite-state-machine": "^1.0.11",
+		"@rbxts/log": "^0.6.3",
+		"@rbxts/profile-store": "^1.0.3",
+		"@rbxts/raycast-hitbox": "^4.0.1-ts.1",
+		"@rbxts/react": "^17.2.3",
+		"@rbxts/react-roblox": "^17.2.3",
+		"@rbxts/ripple": "^0.9.2",
+		"@rbxts/rust-classes": "^0.13.0",
+		"@rbxts/services": "^1.5.5",
+		"@rbxts/signal": "^1.1.1",
+		"@rbxts/simplepath": "^2.2.1-ts.2",
+		"@rbxts/t": "^3.2.1",
+		"@rbxts/ui-labs": "^2.3.5",
+		"rbxts-transform-debug": "file:rbxts-transform-debug"
+	}
 }
